@@ -1,0 +1,367 @@
+/* Reset básico */
+* {
+  margin: 15;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Configuração da navbar */
+.navBar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #fffaf3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  /* Ajusta a largura para centralizar os elementos */
+}
+
+.navBar img {
+  height: 100px;
+  width: auto;
+}
+
+.navBar .menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* Espaço entre os links */
+}
+
+.navBar a {
+  font-size: 1.1rem;
+  color: #5d4037;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px;
+  position: relative;
+}
+
+.navBar a:hover {
+  color: #6a472b;
+  /* Cor mais escura no hover */
+}
+
+/* Linha animada */
+.navBar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6a472b;
+  /* Cor da linha */
+  transition: width 0.3s ease;
+  /* Animação da largura */
+}
+
+.navBar a:hover::after {
+  width: 100%;
+  /* Expande a linha para 100% no hover */
+}
+
+/* Botões de Cadastro e Login */
+.box_login_cadastro::after {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  /* Garante que a caixa de botões esteja visível */
+  visibility: visible;
+  opacity: 1;
+}
+
+.box_login_cadastro a {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o botão "Cadastrar" */
+.cadastrar {
+  border: 2px solid #8e5a4a;
+  background-color: transparent;
+  color: #8e5a4a !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cadastrar:hover {
+  background-color: #8e5a4a;
+  /* Muda o fundo para marrom no hover */
+  color: #fff !important;
+  /* Muda o texto para branco no hover */
+}
+
+
+/* Estilo para o botão "Logar" */
+.logar {
+  border: 2px solid #8e5a4a;
+  background-color: transparent;
+  color: #8e5a4a !important;
+  /* Texto branco inicialmente */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logar:hover {
+  background-color: #8e5a4a;
+  /* Fundo marrom no hover */
+  color: #fff !important;
+  /* Texto permanece branco */
+  opacity: 0.9;
+  /* Opacidade reduzida para um efeito suave */
+}
+
+.home {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+  border-radius: 0vw 0vw 0vw 00vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_embarque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  color: white;
+  height: 19vw;
+  width: 80vw;
+  margin-top: 5vw;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5vw;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.home_embarque a {
+  background-color: #e2e2e2a8;
+  color: white;
+  border-radius: 0.5vw;
+  width: 24vw;
+  height: 5.3vw;
+  text-align: center;
+  padding-top: 1vw;
+  font-size: 1.8vw;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2vw;
+}
+
+.home_embarque span {
+  font-weight: 700;
+  padding-left: 0.2vw;
+  padding-right: 0.2vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.home_embarque a:hover {
+  background-color: #e7c8be;
+  color: white;
+  font-weight: 900;
+  transition: all 0.5s ease;
+  /* Para animações suaves em elementos */
+
+}
+
+.sobre_home {
+  width: 100%;
+  margin-bottom: 3vw;
+  background-color: white;
+}
+
+.container_sobre_home {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vw;
+  color: #756f6f;
+
+}
+
+.container_sobre_home img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
+
+.box_sobre_home {
+  padding-top: 1.3vw;
+  width: 40vw;
+  margin-left: 6vw;
+}
+
+.box_sobre_home h3 {
+  font-size: 2.4vw;
+  font-weight: 600;
+}
+
+.box_sobre_home p {
+  margin-top: 1.2vw;
+  font-size: 1.7vw;
+}
+
+.box_sobre_home span {
+  font-weight: bold;
+}
+
+.box_sobre_home a {
+  background-color: #9b9999;
+  display: flex;
+  width: 20vw;
+  height: 5vw;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 10vw;
+  margin-top: 1vw;
+}
+
+.box_sobre_home a {
+  background-color: #967f6c;
+  /* Muda o fundo para marrom no hover */
+  color: #fff !important;
+  /* Muda o texto para branco no hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.container_sobre_escola {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vw;
+  color: #756f6f;
+}
+
+.container_sobre_escola img {
+  height: 32vw;
+  border-radius: 0.4vw;
+  order: 2; /* Coloca a imagem na segunda posição e deixa invertido com o da história*/
+}
+
+.box_sobre_escola {
+  width: 40vw;
+  margin-right: 6vw;
+  order: 1; /* Coloca o texto na primeira posição */
+}
+
+
+
+/* Estilo para a seção de quizzes */
+.container_quizzes_home {
+  margin-bottom: 29vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  background-color: #fff;
+  /* Fundo claro para destacar o texto */
+  border-radius: 0.8vw;
+  box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  width: 100vw;
+  /* Largura para centralizar */
+  margin: 8vw auto;
+  /* Centraliza a seção */
+}
+
+.box_quizzes_home {
+  text-align: center;
+  max-width: 60vw;
+}
+
+.box_quizzes_home h3 {
+  font-size: 2.7vw;
+  color: #333333;
+  margin-bottom: 1vw;
+  font-weight: bold;
+  letter-spacing: 0.1vw;
+}
+
+.box_quizzes_home p {
+  font-size: 1.2vw;
+  color: #666666;
+  margin-bottom: 2vw;
+  line-height: 1.6;
+}
+
+/* Estilo para o link */
+.box_quizzes_home div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_quizzes_home a {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #8e5a4a;
+  text-decoration: none;
+  border: 2px solid #8e5a4a;
+  padding: 0.5vw 1vw;
+  border-radius: 0.4vw;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  /* Espaço entre o texto e a imagem */
+}
+
+.box_quizzes_home a:hover {
+  background-color: #8e5a4a;
+  color: #fff;
+}
+
+.box_quizzes_home img {
+  width: 1.5vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+ /* FOOTER */ /* f8edde*/
+
+ .footer {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: #f8edde;
+  justify-content: center;
+  align-items: center;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  z-index: 10;
+  
+}
+
+#footerTexto {
+  color: #8e5a4a; 
+  font-family: sans-serif;
+  font-size: 0.8vmax;
+  text-align: center;
+}
+
+
