@@ -1,7 +1,7 @@
 # Code en Tournant
 Projeto individual para conclusão do semestre da SPTech:
 
-🎨 Visão Geral do Projeto
+# 🎨 Visão Geral do Projeto
 
 O site é composto por três seções principais:
 
@@ -13,7 +13,7 @@ Dashboard: Um espaço dedicado para usuários acompanharem seu progresso e engaj
 Quizzes: Uma seção de quizzes interativos para testar os conhecimentos dos usuários sobre ballet. Com perguntas variadas, desde curiosidades a tópicos históricos e técnicos, o quiz visa enriquecer a experiência de aprendizado de forma divertida.
 
 
-🚀Tecnologias Utilizadas
+# 🚀Tecnologias Utilizadas
 
 HTML: Estrutura da aplicação e componentes.
 
@@ -22,10 +22,10 @@ CSS: Design e responsividade, visando uma experiência visual alinhada com a ele
 JavaScript: Dinamismo e interatividade, incluindo a lógica dos quizzes, animações e funcionalidades do dashboard.
 
 
-🎯 Funcionalidades
+# 🎯 Funcionalidades
 
 Exploração de Conteúdo: Descubra a história e os elementos do ballet através de uma navegação intuitiva e visualmente agradável.
 
 Quizzes Interativos: Teste seus conhecimentos sobre o ballet e veja como você se sai em relação a outros usuários.
 
-Dashboard Personalizado: Acompanhe seu progresso, reveja quizzes e explore novos conteúdos recomendados com base no seu engajamento.
+Dashboard Personalizado: Acompanhe seu progresso e tenha em mãos as informações de maneira visual.
