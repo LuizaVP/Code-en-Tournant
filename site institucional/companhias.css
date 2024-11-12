@@ -1,0 +1,439 @@
+/* Reset básico */
+* {
+  
+  
+  
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Configuração da navbar */
+.navBar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #fffaf3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  /* Ajusta a largura para centralizar os elementos */
+}
+
+.navBar img {
+  height: 100px;
+  width: auto;
+}
+
+.navBar .menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* Espaço entre os links */
+}
+
+.navBar a {
+  font-size: 1.1rem;
+  color: #5d4037;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px;
+  position: relative;
+}
+
+.navBar a:hover {
+  color: #6a472b;
+  /* Cor mais escura no hover */
+}
+
+/* Linha animada */
+.navBar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6a472b;
+  /* Cor da linha */
+  transition: width 0.3s ease;
+  /* Animação da largura */
+}
+
+.navBar a:hover::after {
+  width: 100%;
+  /* Expande a linha para 100% no hover */
+}
+
+/* Botões de Cadastro e Login */
+.box_login_cadastro::after {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  /* Garante que a caixa de botões esteja visível */
+  visibility: visible;
+  opacity: 1;
+}
+
+.box_login_cadastro a {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o botão "Cadastrar" */
+.cadastrar {
+  border: 2px solid #8e5a4a;
+  background-color: transparent;
+  color: #8e5a4a !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cadastrar:hover {
+  background-color: #8e5a4a;
+  /* Muda o fundo para marrom no hover */
+  color: #fff !important;
+  /* Muda o texto para branco no hover */
+}
+
+
+/* Estilo para o botão "Logar" */
+.logar {
+  border: 2px solid #8e5a4a;
+  background-color: transparent;
+  color: #8e5a4a !important;
+  /* Texto branco inicialmente */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logar:hover {
+  background-color: #8e5a4a;
+  /* Fundo marrom no hover */
+  color: #fff !important;
+  /* Texto permanece branco */
+  opacity: 0.9;
+  /* Opacidade reduzida para um efeito suave */
+}
+
+.home {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+  border-radius: 0vw 0vw 0vw 00vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_embarque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  color: white;
+  height: 19vw;
+  width: 80vw;
+  margin-top: 5vw;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5vw;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.home_embarque a {
+  background-color: #e2e2e2a8;
+  color: white;
+  border-radius: 0.5vw;
+  width: 24vw;
+  height: 5.3vw;
+  text-align: center;
+  padding-top: 1vw;
+  font-size: 1.8vw;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2vw;
+}
+
+.home_embarque span {
+  font-weight: 700;
+  padding-left: 0.2vw;
+  padding-right: 0.2vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.home_embarque a:hover {
+  background-color: #e7c8be;
+  color: white;
+  font-weight: 900;
+  transition: all 0.5s ease;
+  /* Para animações suaves em elementos */
+
+}
+
+
+.box_quizzes_home {
+  margin-bottom: 1.3vw;
+  padding-top: 1.3vw;
+  width: 40vw;
+  margin-left: 6vw;
+  margin: auto;
+  padding: 1px;
+
+}
+.box_quizzes_home a {
+  color:#8e5a4a;
+
+}
+
+.container_quizzes_home{
+  width: 700px;
+  height: 200px;
+  background-color: #eed4cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 0% 10% 20%;
+}
+
+/* sobre */
+
+.container_sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_sobre h2 {
+  font-size: 3vw;
+  color: #8e5a4a;
+  text-align: center;
+  margin: 3vw 0 1vw 0;
+}
+
+.conteudo {
+  display: flex;
+  /* Flex para alinhar a imagem e o texto lado a lado */
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+.img_sobre {
+  height: 22vw;
+  width: 40vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  /* Bordas arredondadas */
+  margin: 4.5vw 2vw;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+}
+
+.img_sobre_escola {
+  height: 22vw;
+  width: 40vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  /* Bordas arredondadas */
+  margin: 4.5vw 2vw;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+
+}
+
+.sombra_img_sobre {
+  width: 40vw;
+  /* Largura da imagem */
+  height: 22vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  position: absolute;
+  z-index: -2;
+  top: 51vw;
+  margin: 7vw 2vw;
+  margin-left: 1vw;
+  background-color: #002E52;
+}
+
+.sombra_img_sobre2 {
+  width: 40vw;
+  /* Largura da imagem */
+  height: 22vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  position: absolute;
+  z-index: -2;
+  right: 4vw;
+  margin: 6.2vw 2vw;
+  margin-left: 1vw;
+  background-color: #002E52;
+}
+
+.texto {
+  width: 45vw;
+  /* Largura do texto */
+  padding: 2vw;
+}
+
+
+.conteudo .texto p {
+  width: 45vw;
+  /* Largura do texto */
+  padding: 2vw;
+}
+
+.texto p {
+  margin: 0;
+  padding: 1vw;
+  line-height: 1.5;
+  color: #092B43;
+  text-align: justify;
+  padding-top: 1vw;
+}
+
+/* Estilos para a seção de origem do nome */
+.origem {
+  margin: 5vw auto;
+  max-width: 42.5vw;
+  /* 820px convertido para vw */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1vw;
+  /* 20px convertido para vw */
+  color: #333;
+}
+
+
+.sobre_home {
+  width: 100%;
+  height: 50vw;
+  background-color: white;
+}
+
+.container_sobre_companhias {
+  width: 100%;
+  height: 58vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 8vw;
+  color: #000008a0
+}
+
+.container_sobre_escola {
+  width: 100%;
+  height: 58vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 9vw;
+  color: #000008a0
+}
+.container_sobre_melhores {
+  width: 100%;
+  height: 58vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 9vw;
+  color: #000008a0
+}
+
+.container_sobre_companhias img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
+
+.container_sobre_escola img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
+.container_sobre_melhores img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
+
+
+.box_sobre_home {
+  padding-top: 1.3vw;
+  width: 40vw;
+  margin-left: 6vw;
+}
+
+.box_sobre_home h3 {
+  margin-top: 4vh;
+  font-size: 2.4vw;
+  font-weight: 600;
+}
+
+.box_sobre_home p {
+  margin-top: 1.1vw;
+  font-size: 1.7vw;
+}
+
+.box_sobre_home span {
+  font-weight: bold;
+}
+
+.box_sobre_home a {
+  background-color: #cecccc;
+  display: flex;
+  width: 20vw;
+  height: 5vw;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 5vw;
+  margin-top: 1vw;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+  color:#8e5a4a;
+}
+.box_sobre_home a:hover{
+  background-color: #bbbbbb;
+  color:#6a472b;
+  opacity: 5;
+}
+
+/* FOOTER */
+/* f8edde*/
+
+.footer {
+  display: flex;
+padding: 0px 50px 50px 50px;
+  
+  background-color: #f8edde;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+#footerTexto {
+  color: #8e5a4a;
+  font-family: sans-serif;
+  font-size: 0.8vmax;
+  text-align: center;
+}
