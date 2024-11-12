@@ -1,0 +1,538 @@
+* {
+    margin: 15;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Configuração da navbar */
+.navBar {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #fffaf3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    /* Ajusta a largura para centralizar os elementos */
+}
+
+.navBar img {
+    height: 100px;
+    width: auto;
+}
+
+.navBar .menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Espaço entre os links */
+}
+
+.navBar a {
+    font-size: 1.1rem;
+    color: #5d4037;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px;
+    position: relative;
+}
+
+.navBar a:hover {
+    color: #6a472b;
+    /* Cor mais escura no hover */
+}
+
+/* Linha animada */
+.navBar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6a472b;
+    /* Cor da linha */
+    transition: width 0.3s ease;
+    /* Animação da largura */
+}
+
+.navBar a:hover::after {
+    width: 100%;
+    /* Expande a linha para 100% no hover */
+}
+
+/* Botões de Cadastro e Login */
+.box_login_cadastro::after {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* Garante que a caixa de botões esteja visível */
+    visibility: visible;
+    opacity: 1;
+}
+
+.box_login_cadastro a {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o botão "Cadastrar" */
+.cadastrar {
+    border: 2px solid #8e5a4a;
+    background-color: transparent;
+    color: #8e5a4a !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cadastrar:hover {
+    background-color: #8e5a4a;
+    /* Muda o fundo para marrom no hover */
+    color: #fff !important;
+    /* Muda o texto para branco no hover */
+}
+
+
+/* Estilo para o botão "Logar" */
+.logar {
+    border: 2px solid #8e5a4a;
+    background-color: transparent;
+    color: #8e5a4a !important;
+    /* Texto branco inicialmente */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logar:hover {
+    background-color: #8e5a4a;
+    /* Fundo marrom no hover */
+    color: #fff !important;
+    /* Texto permanece branco */
+    opacity: 0.9;
+    /* Opacidade reduzida para um efeito suave */
+}
+
+/* sobre */
+
+.container_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_sobre h2 {
+    font-size: 3vw;
+    color: #ebe1d5;
+    text-align: center;
+    margin: 3vw 0 1vw 0;
+}
+
+.conteudo {
+    display: flex;
+    /* Flex para alinhar a imagem e o texto lado a lado */
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+.conteudo2 {
+    display: flex;
+    /* Flex para alinhar a imagem e o texto lado a lado */
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.img_sobre {
+    height: 22vw;
+    width: 40vw;
+    /* Limite máximo para evitar zoom excessivo */
+    border-radius: 2vw;
+    /* Bordas arredondadas */
+    margin: 4.5vw 2vw;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+}
+
+.sombra_img_sobre {
+    width: 40vw;
+    /* Largura da imagem */
+    height: 22vw;
+    /* Limite máximo para evitar zoom excessivo */
+    border-radius: 2vw;
+    position: absolute;
+    z-index: -2;
+    top: 51vw;
+    margin: 7vw 2vw;
+    margin-left: 1vw;
+    background-color: #e0d7ca;
+}
+
+.sombra_img_sobre2 {
+    width: 40vw;
+    /* Largura da imagem */
+    height: 22vw;
+    /* Limite máximo para evitar zoom excessivo */
+    border-radius: 2vw;
+    position: absolute;
+    z-index: -2;
+    right: 4vw;
+    margin: 6.2vw 2vw;
+    margin-left: 1vw;
+    background-color: #e0d7ca;
+}
+.sombra_img_sobre3 {
+    width: 40vw;
+    /* Largura da imagem */
+    height: 22vw;
+    /* Limite máximo para evitar zoom excessivo */
+    border-radius: 2vw;
+    position: absolute;
+    z-index: -2;
+    right: 4vw;
+    margin: 6.2vw 2vw;
+    margin-left: 1vw;
+    background-color: #e0d7ca;
+}
+
+.texto {
+    width: 45vw;
+    /* Largura do texto */
+    padding: 2vw;
+}
+
+
+.conteudo .texto p {
+    width: 45vw;
+    /* Largura do texto */
+    padding: 2vw;
+}
+
+.texto p {
+    margin: 0;
+    padding: 1vw;
+    line-height: 1.5;
+    color: #000000a8;
+    text-align: justify;
+    padding-top: 1vw;
+}
+.texto2 {
+    width: 45vw;
+    /* Largura do texto */
+    padding: 2vw;
+}
+.texto2 p {
+    margin-right: 9vh;
+    margin-top: 10vh;
+    padding: 1vw;
+    line-height: 1.6;
+    color: #000000a8;
+    text-align: justify;
+    padding-top: 1vw;
+}
+
+/* Estilos para a seção de origem do nome */
+.origem {
+    margin: 5vw auto;
+    max-width: 42.5vw;
+    /* 820px convertido para vw */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+    /* 20px convertido para vw */
+    color: #333;
+}
+
+.origem h2 {
+    color: #092B43;
+}
+
+.origem b {
+    color: #08568e;
+}
+
+/* Estilos para os parágrafos */
+.texto p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Estilos para os cards de texto */
+.text-card {
+    background-color: #ffffff;
+    border-radius: 2vw;
+    padding: 5vw;
+    margin: 5vw;
+}
+
+/* Estilos para os parágrafos dentro do card */
+.text-card p {
+    margin-bottom: 7vw;
+    line-height: 0.9vw;
+    color: #333;
+}
+
+.valor-item {
+    font-size: 1.1em;
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.valor-item:hover {
+    color: #f0f0f0;
+    background-color: #092B43;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.card i {
+    font-size: 30px;
+    color: #092B43;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os cartões */
+.card { 
+    display: flex;
+    /* Flex para alinhar a imagem e o texto lado a lado */
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Estilos específicos para a seção de missão, valores e onu */
+.missao-valores-onu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 18%;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+.card  img {
+    height: 22vw;
+    width: 40vw;
+    /* Limite máximo para evitar zoom excessivo */
+    border-radius: 2vw;
+    /* Bordas arredondadas */
+    margin: 4.5vw 2vw;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+}
+
+/* Estilos para os elementos dentro dos cartões */
+
+
+.card p {
+    margin-left: 20vh;
+    margin-top: 14vh;
+    padding: 1vw;
+    line-height: 1.5;
+    color: #000000a8;
+    text-align: justify;
+    padding-top: 1vw;
+    width: 40vw;
+    /* Largura do texto */
+    padding: 2vw;
+}
+
+.card .valor-item {
+    font-size: 1.0vw;
+    justify-content: center;
+    line-height: 1.8vw;
+    color: #333;
+}
+
+.card .valor-item:hover {
+    color: #f0f0f0;
+    background-color: #092B43;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.sobre_home {
+    width: 100%;
+    height: 50vw;
+    background-color: white;
+}
+
+.container_sobre_home {
+    width: 100%;
+    height: 58vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 9vw;
+    color: #092B43
+}
+
+.container_sobre_home img {
+    height: 32vw;
+    border-radius: 0.4vw;
+}
+
+.box_sobre_home {
+    padding-top: 1.3vw;
+    width: 40vw;
+    margin-left: 6vw;
+}
+
+.box_sobre_home h3 {
+    font-size: 2.4vw;
+    font-weight: 600;
+}
+
+.box_sobre_home p {
+    margin-top: 1.2vw;
+    font-size: 1.7vw;
+}
+
+.box_sobre_home span {
+    font-weight: bold;
+}
+
+.box_sobre_home a {
+    background-color: #e0d7ca;
+    display: flex;
+    width: 20vw;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 7vw;
+    margin-top: 1vw;
+}
+
+.header_sobre {
+    position: relative;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 15vw;
+    overflow: hidden;
+}
+
+.header_sobre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #fffaf3;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0.1, 0.1);
+    /* Cor preta com opacidade de 50% */
+    border-radius: 78vw 0 78vw 78vw;
+    /* Aplica o mesmo border-radius da imagem */
+    z-index: 1;
+    /* Fica acima do fundo */
+}
+
+.header_sobre h2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8e5a4a;
+    font-size: 4vw;
+    font-family: "Saira", sans-serif;
+    position: absolute;
+    z-index: 2
+}
+
+.sobre_home {
+    width: 100%;
+    margin-bottom: 3vw;
+    background-color: white;
+}
+
+.container_sobre_home {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+    color: #092B43;
+}
+
+.container_sobre_home img {
+    height: 32vw;
+    border-radius: 0.4vw;
+}
+
+.box_sobre_home {
+    padding-top: 1.3vw;
+    width: 40vw;
+    margin-left: 6vw;
+}
+
+.box_sobre_home h3 {
+    font-size: 2.4vw;
+    font-weight: 600;
+}
+
+.box_sobre_home p {
+    margin-top: 1.2vw;
+    font-size: 1.7vw;
+}
+
+.box_sobre_home span {
+    font-weight: bold;
+}
+
+.box_sobre_home a {
+    background-color: #092B43;
+    display: flex;
+    width: 20vw;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 0.4vw;
+    margin-top: 1vw;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: #f8edde;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  
+  }
+  
+  #footerTexto {
+    color: #8e5a4a;
+    font-family: sans-serif;
+    font-size: 0.8vmax;
+    text-align: center;
+  }
