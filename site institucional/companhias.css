@@ -1,8 +1,8 @@
 /* Reset básico */
 * {
-  margin: 15;
-  padding: 0;
-  box-sizing: border-box;
+  
+  
+  
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
@@ -188,23 +188,151 @@ h2 {
 
 }
 
+
+/* sobre */
+
+.container_sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_sobre h2 {
+  font-size: 3vw;
+  color: #8e5a4a;
+  text-align: center;
+  margin: 3vw 0 1vw 0;
+}
+
+.conteudo {
+  display: flex;
+  /* Flex para alinhar a imagem e o texto lado a lado */
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+.img_sobre {
+  height: 22vw;
+  width: 40vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  /* Bordas arredondadas */
+  margin: 4.5vw 2vw;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+}
+
+.img_sobre_escola {
+  height: 22vw;
+  width: 40vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  /* Bordas arredondadas */
+  margin: 4.5vw 2vw;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+
+}
+
+.sombra_img_sobre {
+  width: 40vw;
+  /* Largura da imagem */
+  height: 22vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  position: absolute;
+  z-index: -2;
+  top: 51vw;
+  margin: 7vw 2vw;
+  margin-left: 1vw;
+  background-color: #002E52;
+}
+
+.sombra_img_sobre2 {
+  width: 40vw;
+  /* Largura da imagem */
+  height: 22vw;
+  /* Limite máximo para evitar zoom excessivo */
+  border-radius: 2vw;
+  position: absolute;
+  z-index: -2;
+  right: 4vw;
+  margin: 6.2vw 2vw;
+  margin-left: 1vw;
+  background-color: #002E52;
+}
+
+.texto {
+  width: 45vw;
+  /* Largura do texto */
+  padding: 2vw;
+}
+
+
+.conteudo .texto p {
+  width: 45vw;
+  /* Largura do texto */
+  padding: 2vw;
+}
+
+.texto p {
+  margin: 0;
+  padding: 1vw;
+  line-height: 1.5;
+  color: #092B43;
+  text-align: justify;
+  padding-top: 1vw;
+}
+
+/* Estilos para a seção de origem do nome */
+.origem {
+  margin: 5vw auto;
+  max-width: 42.5vw;
+  /* 820px convertido para vw */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1vw;
+  /* 20px convertido para vw */
+  color: #333;
+}
+
+
 .sobre_home {
   width: 100%;
-  margin-bottom: 3vw;
+  height: 50vw;
   background-color: white;
 }
 
 .container_sobre_home {
   width: 100%;
-  height: 40vw;
+  height: 58vw;
   display: flex;
   justify-content: center;
-  padding-top: 5vw;
-  color: #756f6f;
+  padding-top: 8vw;
+  color: #000008a0
+}
 
+.container_sobre_escola {
+  width: 100%;
+  height: 58vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 9vw;
+  color: #000008a0
 }
 
 .container_sobre_home img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
+
+.container_sobre_escola img {
   height: 32vw;
   border-radius: 0.4vw;
 }
@@ -216,12 +344,13 @@ h2 {
 }
 
 .box_sobre_home h3 {
+  margin-top: 4vh;
   font-size: 2.4vw;
   font-weight: 600;
 }
 
 .box_sobre_home p {
-  margin-top: 1.2vw;
+  margin-top: 1.1vw;
   font-size: 1.7vw;
 }
 
@@ -230,131 +359,37 @@ h2 {
 }
 
 .box_sobre_home a {
-  background-color: #9b9999;
+  background-color: #cecccc;
   display: flex;
   width: 20vw;
   height: 5vw;
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  border-radius: 10vw;
+  border-radius: 5vw;
   margin-top: 1vw;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+  color:#8e5a4a;
+}
+.box_sobre_home a:hover{
+  background-color: #bbbbbb;
+  color:#6a472b;
+  opacity: 5;
 }
 
-.box_sobre_home a {
-  background-color: #967f6c;
-  /* Muda o fundo para marrom no hover */
-  color: #fff !important;
-  /* Muda o texto para branco no hover */
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+/* FOOTER */
+/* f8edde*/
 
-
-.container_sobre_escola {
+.footer {
   display: flex;
-  justify-content: center;
-  padding-top: 5vw;
-  color: #756f6f;
-}
-
-.container_sobre_escola img {
-
-  height: 24vw; /* Diminuído de 32vw para 24vw */
-  border-radius: 0.4vw;
-  order: 2; /* Coloca a imagem na segunda posição e deixa invertido com o da história */
-
-}
-
-.box_sobre_escola {
-  width: 40vw;
-  margin-right: 6vw;
-  order: 1; /* Coloca o texto na primeira posição */
-}
-
-
-
-/* Estilo para a seção de quizzes */
-.container_quizzes_home {
-  margin-bottom: 29vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2vw;
-  background-color: #fff;
-  /* Fundo claro para destacar o texto */
-  border-radius: 0.8vw;
-  box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
-  /* Sombra suave */
-  width: 100vw;
-  /* Largura para centralizar */
-  margin: 8vw auto;
-  /* Centraliza a seção */
-}
-
-.box_quizzes_home {
-  text-align: center;
-  max-width: 60vw;
-}
-
-.box_quizzes_home h3 {
-  font-size: 2.7vw;
-  color: #333333;
-  margin-bottom: 1vw;
-  font-weight: bold;
-  letter-spacing: 0.1vw;
-}
-
-.box_quizzes_home p {
-  font-size: 1.2vw;
-  color: #666666;
-  margin-bottom: 2vw;
-  line-height: 1.6;
-}
-
-/* Estilo para o link */
-.box_quizzes_home div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box_quizzes_home a {
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: #8e5a4a;
-  text-decoration: none;
-  border: 2px solid #8e5a4a;
-  padding: 0.5vw 1vw;
-  border-radius: 0.4vw;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5vw;
-  /* Espaço entre o texto e a imagem */
-}
-
-.box_quizzes_home a:hover {
-  background-color: #8e5a4a;
-  color: #fff;
-}
-
-.box_quizzes_home img {
-  width: 1.5vw;
-  height: auto;
-  transition: transform 0.3s ease;
-}
- /* FOOTER */ /* f8edde*/
-
- .footer {
-  display: flex;
-  width: 100%;
-  height: 8vh;
+padding: 0px 50px 50px 50px;
+  
   background-color: #f8edde;
   justify-content: center;
   align-items: center;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+  
 
 }
 
@@ -364,5 +399,3 @@ h2 {
   font-size: 0.8vmax;
   text-align: center;
 }
-
-
