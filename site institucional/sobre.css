@@ -221,7 +221,10 @@
     width: 45vw;
     /* Largura do texto */
     padding: 2vw;
+    background-color: #e0d7ca;
+    border-radius: 2vw;
 }
+
 
 .texto p {
     margin: 0;
@@ -349,7 +352,7 @@
 
 
 .card p {
-    margin-left: 20vh;
+    margin-left: 10vh;
     margin-top: 14vh;
     padding: 1vw;
     line-height: 1.5;

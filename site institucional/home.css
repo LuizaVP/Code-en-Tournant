@@ -348,17 +348,17 @@ h2 {
   height: 58vw;
   display: flex;
   justify-content: center;
-  padding-top: 9vw;
+  padding-top: 8vw;
   color: #000008a0
 }
 
 .container_sobre_home img {
-  height: 32vw;
+  height: 30vw;
   border-radius: 0.4vw;
 }
 
 .container_sobre_escola img {
-  height: 32vw;
+  height: 30vw;
   border-radius: 0.4vw;
 }
 
