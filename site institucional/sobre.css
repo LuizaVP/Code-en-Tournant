@@ -252,17 +252,39 @@
 /* Estilos para a seção de origem do nome */
 .origem {
     margin: 5vw auto;
-    max-width: 42.5vw;
+    max-width: 45vw;
     /* 820px convertido para vw */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 1vw;
-    /* 20px convertido para vw */
+    font-size: 1.25vw;
+    letter-spacing: 0.5px;
     color: #333;
+    border: 2px solid #e0d7ca; /* Adiciona uma borda de 2px com a cor desejada */
+    border-radius: 8px; /* Adiciona bordas arredondadas, opcional */
+    padding: 20px;
 }
+.origem h2{
+    color:#8e5a4a;
+}
+
+.img_onu{
+    display: flex; /* Adiciona flex para o container das imagens */
+    justify-content: space-between; /* Espaço entre as imagens */
+    width: 100%;
+}
+
+
+.origem .img_onu1,
+.origem .img_onu2 {
+
+    flex: 1; /* As imagens vão ocupar espaço igual */
+    max-width: 45%; /* Limita a largura máxima de cada imagem */
+    margin: 0 10px; /* Adiciona margem entre as imagens */
+
+}
+
 
 /* Estilos para os parágrafos */
 .texto p {
@@ -513,21 +535,26 @@
 }
 
 .footer {
+    max-width: 100%;
+    background-color: #fff3fa;
+    height: 100px;
+    color: #fff;
     display: flex;
-    width: 100%;
-    height: 8vh;
-    background-color: #f8edde;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-  
-  }
-  
-  #footerTexto {
+    font-size: 15px;
+    margin-top: 160px;
+}
+
+#footerTexto {
+    display: flex;
     color: #8e5a4a;
-    font-family: sans-serif;
-    font-size: 0.8vmax;
+    margin-left: 15%;
+}
+
+.footer .container {
+    justify-content: center;
     text-align: center;
-  }
+}
+
+.footer .container .version {
+    font-size: 12px;
+}
