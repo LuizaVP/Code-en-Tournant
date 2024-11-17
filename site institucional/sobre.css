@@ -534,27 +534,4 @@
     margin-top: 1vw;
 }
 
-.footer {
-    max-width: 100%;
-    background-color: #fff3fa;
-    height: 100px;
-    color: #fff;
-    display: flex;
-    font-size: 15px;
-    margin-top: 160px;
-}
 
-#footerTexto {
-    display: flex;
-    color: #8e5a4a;
-    margin-left: 15%;
-}
-
-.footer .container {
-    justify-content: center;
-    text-align: center;
-}
-
-.footer .container .version {
-    font-size: 12px;
-}
