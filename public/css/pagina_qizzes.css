@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+  background: #f7e9df;
+}
+
+.navBar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #fffaf3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  /* Ajusta a largura para centralizar os elementos */
+}
+
+.navBar img {
+  height: 100px;
+  width: auto;
+}
+
+.navBar .menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* Espaço entre os links */
+}
+
+.navBar a {
+  font-size: 1.1rem;
+  color: #5d4037;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px;
+  position: relative;
+}
+
+.navBar a:hover {
+  color: #6a472b;
+  /* Cor mais escura no hover */
+}
+
+/* Linha animada */
+.navBar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6a472b;
+  /* Cor da linha */
+  transition: width 0.3s ease;
+  /* Animação da largura */
+}
+
+.navBar a:hover::after {
+  width: 100%;
+  /* Expande a linha para 100% no hover */
+}
+
+.box_login_cadastro::after {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  /* Garante que a caixa de botões esteja visível */
+  visibility: visible;
+  opacity: 1;
+}
+
+.box_login_cadastro a {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o botão "Cadastrar" */
+.cadastrar {
+  border: 2px solid #8e5a4a;
+  background-color: transparent;
+  color: #8e5a4a !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cadastrar:hover {
+  background-color: #8e5a4a;
+  /* Muda o fundo para marrom no hover */
+  color: #fff !important;
+  /* Muda o texto para branco no hover */
+}
+
+
+/* Estilo para o botão "Logar" */
+.logar {
+  border: 2px solid #8e5a4a;
+  background-color: transparent;
+  color: #8e5a4a !important;
+  /* Texto branco inicialmente */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logar:hover {
+  background-color: #8e5a4a;
+  /* Fundo marrom no hover */
+  color: #fff !important;
+  /* Texto permanece branco */
+  opacity: 0.9;
+  /* Opacidade reduzida para um efeito suave */
+}
+
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 160px;
+  flex-wrap: wrap;
+}
+
+.quiz-box {
+  width: 200px;
+  height: 200px;
+  background-color: #8e5a4a;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quiz-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-box a {
+  color: white;
+  text-decoration: none;
+}
+.footer {
+  max-width: 200%;
+  background-color: #fff3fa;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  font-size: 15px;
+  margin-top: 200px;
+}
+
+#footerTexto {
+  display: flex;
+  color: #8e5a4a;
+  margin-left: 15%;
+}
+
+.footer .container {
+  justify-content: center;
+  text-align: center;
+}
+
+.footer .container .version {
+  font-size: 12px;
+}

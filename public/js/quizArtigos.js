@@ -42,7 +42,7 @@
         alternativaC: "Fixar acessórios de cabelo",
         alternativaD: "Ajudar nas provas",
         alternativaCorreta: "alternativaB",
-        imagem: "/assets/laquê.webp"
+        imagem: "assets/laquê.webp"
     },
     {pergunta: "Você sabe para que a fita pode ser útil?",
         alternativaA: "Amolecer a sapatilha, amenizando dores",
