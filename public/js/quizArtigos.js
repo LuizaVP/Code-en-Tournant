@@ -7,7 +7,7 @@
         alternativaC: "Acessório para o coque",
         alternativaD: "Ajudar em giros",
         alternativaCorreta: "alternativaC",
-        imagem: '/home/luizavp/API DATA VIZ/web-data-viz/public/assets/imgs/redinha.jpeg'
+        imagem: 'assets/redinha.jpeg'
     },
     {
         pergunta: "Para que serve o Porta Figurino?",
@@ -16,7 +16,7 @@
         alternativaC: "Ajudar na flexibilidade",
         alternativaD: "Guardar a garrafinha de água",
         alternativaCorreta: "alternativaA",
-        imagem: "/home/luizavp/API DATA VIZ/web-data-viz/public/assets/imgs/portafigurino.jpeg"  // Caminho da imagem
+        imagem: "assets/portafigurino.jpeg"  // Caminho da imagem
     },
     {
         pergunta: "Qual o nome desse acessório?",
@@ -25,7 +25,7 @@
         alternativaC: "Ponteira",
         alternativaD: "Sapatilha de ponta",
         alternativaCorreta: "alternativaD",
-        imagem: "/home/luizavp/API DATA VIZ/web-data-viz/public/assets/imgs/ponta.jpeg"  // Caminho da imagem
+        imagem: "assets/ponta.jpeg"  // Caminho da imagem
     },
     {
         pergunta: "Para que serve a ponteira?",
@@ -34,7 +34,7 @@
         alternativaC: "Amenizar o atrito da sapatilha de ponta",
         alternativaD: "Melhorar o rendimento",
         alternativaCorreta: "alternativaC",
-        imagem: "/home/luizavp/API DATA VIZ/web-data-viz/public/assets/imgs/ponteira.webp"  // Caminho da imagem
+        imagem: "assets/ponteira.webp"  // Caminho da imagem
     },
     {pergunta: "Qual a finalidade do laquê?",
         alternativaA: "Impedir a sapatilha de escorregar",
@@ -42,7 +42,7 @@
         alternativaC: "Fixar acessórios de cabelo",
         alternativaD: "Ajudar nas provas",
         alternativaCorreta: "alternativaB",
-        imagem: "/home/luizavp/API DATA VIZ/web-data-viz/public/assets/imgs/laquê.webp"
+        imagem: "/assets/laquê.webp"
     },
     {pergunta: "Você sabe para que a fita pode ser útil?",
         alternativaA: "Amolecer a sapatilha, amenizando dores",
@@ -50,7 +50,7 @@
         alternativaC: "Prender a sapatilha",
         alternativaD: "Melhorar a forma de costurar",
         alternativaCorreta: "alternativaB",
-        imagem: "/home/luizavp/API DATA VIZ/web-data-viz/public/assets/imgs/elastico.jpg"
+        imagem: "assets/elastico.jpg"
     },
     {pergunta: "Para que serve os grampos?",
         alternativaA: "Prender todos os fios no coque",
@@ -58,7 +58,7 @@
         alternativaC: "Acessório de performance",
         alternativaD: "Presente para a professora",
         alternativaCorreta: "alternativaA",
-        imagem: "/home/luizavp/API DATA VIZ/web-data-viz/public/assets/imgs/grampos.webp"
+        imagem: "assets/grampos.webp"
     }
     
 ]

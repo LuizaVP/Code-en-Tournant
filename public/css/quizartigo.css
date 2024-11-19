@@ -1,187 +1,180 @@
-/* Aula 20 Maia Quiz */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-/* vermelho #f44336 ou #d50000 verde #4caf50 ou #1b5e20  */
+/* Paleta de Cores */
 :root {
-    --principal: #03a9f4;
-    --secundaria: #0d47a1;
-    --azul-escuro: #0d47a1;
-    --cinza-escuro: #222;
-    --branco: #fff;
-    --verde: #4caf50;
-    --vermelho: #f44336;
+    --background-color: #fffaf3; /* Fundo */
+    --primary-color: #8e5a4a; /* Marrom principal */
+    --secondary-color: #c4a898; /* Tom secundário suave */
+    --accent-color: #f3d2c1; /* Destaque leve */
+    --success: #2f6e13; 
+    --success-dark: #095c36;
+    --success-light: #9dd3ba;
+    --warning: #ffc107;; /* Amarelo suave */
+    --danger-color: #b41b1b; 
+    --danger-dark: #990c19;
+    --danger-light: #f0c1c6;
+    --text-color: #4a2e25; /* Texto escuro */
+    --new-gray: #CCCCCC;
+    --new-black: #212427;
+    --new-white: #E8E8E8;
 }
+ /*:root {--primary-brand-color: #ED145B;
+    --secondary-brand-color: #0762C8;
+    --success: #198754;
+    --success-dark: #095c36;
+    --success-light: #9dd3ba;
+    --warning: #ffc107;
+    --warning-dark: #705400;
+    --warning-light: #fdebb3;
+    --danger: #dc3545;
+    --danger-dark: #990c19;
+    --danger-light: #f0c1c6;
+    --new-gray: #CCCCCC;
+    --new-black: #212427;
+    --new-white: #E8E8E8;
+    */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-}
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background: #ececec;
-    color: #191919;
-    overflow-x: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-main {
-    width: 100%;
-    height: 100vh;
+/* Estilos para o container principal do quiz */
+#pontuacaoEJogo {
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
 }
 
-section {
-    width: 100vw;
+/* Botão inicial */
+#btnIniciarQuiz {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
 
+#btnIniciarQuiz:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Layout flexível e responsivo */
+.flex-colunar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-h1 {
-    text-align: center;
-    font-size: 1.75rem;
-    margin: 0.5rem 0 0 0;
+.width-fit-content {
+    width: fit-content;
 }
 
-/* classe para centralizar textos, paragrafos */
-.centro {
-    text-align: center;
+
+/* Bordas para os blocos */
+.border-primary {
+    border: 1px solid var(--primary-color);
 }
 
-/* div class questao com numero da questao e pergunta */
-.questao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+.border-secondary {
+    border: 1px solid var(--secondary-color);
 }
 
-#numQuestao {
-    text-align: center;
-    width: 2rem;
-    height: 2rem;
-    display: block;
-    background: var(--principal);
-    color: #fff;
-    padding: 6px 10px 4px 8px;
-    border-radius: 50%;
+/* Espacamento */
+.padding-8 {
+    padding: 8px;
 }
 
-#pergunta {
-    margin-left: 1rem;
+.width-fit-content {
+    width: fit-content;
 }
 
-.imagemDaQuestao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* article que acomoda a questao completa */
-.questoes {
-    user-select: none;
-    background: #fff;
-
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
-    border: 1px solid #ececec;
+/* Estilos dos botões */
+button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
     border-radius: 5px;
-    margin-bottom: 0.625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-.questoes ol li {
-    border: 1px solid var(--principal);
-    display: block;
-    margin-bottom: 0.625rem;
-    padding: 1rem;
-    border-radius: 8px;
+button:disabled {
+    background-color: var(--secondary-color);
+    cursor: not-allowed;
 }
 
-.questoes ol li:hover {
-    background: var(--principal);
+button:hover:not(:disabled) {
+    background-color: var(--accent-color);
+}
+
+/* Estilo das opções */
+.opçoes {
+    display: flex;
+    margin: 10px 0;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-.bloqueado {
-    display: none;
+.radio {
+    margin-right: 20px;
 }
 
-.bloqueado li:hover {
-    display: none;
+/* Destaques de acerto/erro */
+.text-bold {
+    font-weight: bold;
 }
 
-#instrucoes {
+.text-success-with-bg {
+    color: var(--success-dark);
+    background-color: var(--success-light);
+}
+
+.text-warning-with-bg {
+    background-color: var(--warning-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.text-danger-with-bg {
+    color: var(--danger-dark);
+    background-color: var(--danger-light);
+}
+
+/* Títulos e mensagens finais */
+#pontuacaoFinalJogo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#msgFinal {
     font-size: 1rem;
-    color: #191919;
-    padding: 0.625rem;
-    border-radius: 8px;
-
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
 }
 
-#aviso {
-    color: var(--principal);
+.text-new-gray {
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 6px;
 }
 
-#autoria {
-    margin-top: 0.625rem;
-    font-size: 0.75rem;
-}
-
-/* ANIMACAO */
-
-/* Animar o input */
-@keyframes piscar {
-    0% {
-        filter: drop-shadow(0 0 15px var(--principal));
-        -webkit-filter: drop-shadow(0 0 15px var(--principal));
-        -moz-filter: drop-shadow(0 0 15px var(--principal));
-        -o-filter: drop-shadow(0 0 15px var(--principal));
-        -ms-filter: drop-shadow(0 0 15px var(--principal));
-    }
-    100% {
-    }
-}
-
-.animar {
-    animation: piscar .75s infinite alternate;
-}
-
-.aparecer {
-    animation: aparecer .5s infinite alternate;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.acertou {
-    background: var(--verde);
-    animation: aparecer 0.1s infinite alternate;
-}
-
-.errou {
-    background: var(--vermelho);
-    animation: aparecer 0.1s infinite alternate;
-}
-
-.placar {
-    padding: 1rem;
-    border-radius: 8px;
-    background:#03a9f4;
-    font-size: 2rem;
+.jogo{
+    max-width: fit-content;
 }
