@@ -133,8 +133,9 @@ body {
 }
 
 .quiz-box {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 2
+  300px;
   background-color: #8e5a4a;
   color: white;
   text-align: center;
@@ -164,7 +165,7 @@ body {
   color: #fff;
   display: flex;
   font-size: 15px;
-  margin-top: 200px;
+  margin-top: 270px;
 }
 
 #footerTexto {

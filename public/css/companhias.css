@@ -317,8 +317,70 @@ h2 {
   padding-top: 8vw;
   color: #000008a0
 }
+.container_sobre_home img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
 
 .container_sobre_escola {
+  width: 100%;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 6vw;
+  color: #000008a0;
+}
+
+
+.container_vaganova img {
+  height: 25vw;
+  border-radius: 0.4vw;
+}
+.container_vaganova {
+  width: 100%;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 6vw;
+  color: #000008a0;
+
+}
+
+.container_royal img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
+.container_royal {
+  width: 100%;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 3vw;
+  color: #000008a0;
+ 
+}
+
+.container_cubana img {
+  height: 30vw;
+  border-radius: 0.4vw;
+}
+
+.container_cubana {
+  width: 100%;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 6vw;
+  color: #000008a0
+}
+
+
+.container_sobre_escola img {
+  height: 32vw;
+  border-radius: 0.4vw;
+}
+
+.container_sobre_escola2 {
   width: 100%;
   height: 45vw;
   display: flex;
@@ -327,16 +389,11 @@ h2 {
   color: #000008a0
 }
 
-.container_sobre_home img {
+
+.container_sobre_escola2 img {
   height: 32vw;
   border-radius: 0.4vw;
 }
-
-.container_sobre_escola img {
-  height: 32vw;
-  border-radius: 0.4vw;
-}
-
 .box_sobre_home {
   padding-top: 1.3vw;
   margin-left: 6vw;
