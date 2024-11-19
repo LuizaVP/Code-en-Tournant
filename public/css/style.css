@@ -176,5 +176,7 @@ button:hover:not(:disabled) {
 }
 
 .jogo{
-    max-width: fit-content;
+    display: flex;
+    max-width: 50%;
+
 }
