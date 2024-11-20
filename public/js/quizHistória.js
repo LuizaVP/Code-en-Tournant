@@ -34,7 +34,45 @@ const listaDeQuestoes = [
         alternativaC: 'Mestre de Ballet',
         alternativaD: 'Músico Clássico',
         alternativaCorreta: 'alternativaC'
+    },
+    {   pergunta: "Qual foi a metodologia criada pela bailarina russa Agrippina?",
+        alternativaA: "Vaganova",
+        alternativaB: 'Royal',
+        alternativaC: 'Cubana',
+        alternativaD: 'Scrum',
+        alternativaCorreta: 'alternativaA'
+    },
+    {   pergunta: "Qual metodologia é conhecida por ser progressiva e técnica?",
+        alternativaA: "Cubana",
+        alternativaB: 'Itil',
+        alternativaC: 'Vaganova',
+        alternativaD: 'Royal',
+        alternativaCorreta: 'alternativaC'
+    },
+    {   pergunta: "Em qual país o Ballet Bolshoi possui outra unidade?",
+        alternativaA: "Inglaterra",
+        alternativaB: 'Brasil',
+        alternativaC: 'Japão',
+        alternativaD: 'Coréia do Sul',
+        alternativaCorreta: 'alternativaB'
+    },
+    {   pergunta: "Qual metodologia é mais utilizada?",
+        alternativaA: "Documentação",
+        alternativaB: 'GMUD',
+        alternativaC: 'Cubana',
+        alternativaD: 'Vaganova',
+        alternativaCorreta: 'alternativaD'
+    },
+    {   pergunta: "Qual metodologia foi criada por ALicia Alonso?",
+        alternativaA: "Scrum",
+        alternativaB: 'Royal',
+        alternativaC: 'Kanban',
+        alternativaD: 'Cubana',
+        alternativaCorreta: 'alternativaD'
     }
+    
+    
+
 ]
 
 // variáveis globais    
