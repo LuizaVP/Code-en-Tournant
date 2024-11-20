@@ -1,10 +1,10 @@
 * {
-    margin: 15;
-    padding: 0;
-    box-sizing: border-box;
+  
+  
+
     font-family: "Poppins", sans-serif;
     transition: all 0.3s ease;
-}
+  }
 
 /* Configuração da navbar */
 .navBar {
@@ -18,44 +18,44 @@
     z-index: 1000;
     display: flex;
     justify-content: center;
-}
-
-.navBar .container {
+  }
+  
+  .navBar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%;
     /* Ajusta a largura para centralizar os elementos */
-}
-
-.navBar img {
+  }
+  
+  .navBar img {
     height: 100px;
     width: auto;
-}
-
-.navBar .menu {
+  }
+  
+  .navBar .menu {
     display: flex;
     align-items: center;
     gap: 30px;
     /* Espaço entre os links */
-}
-
-.navBar a {
+  }
+  
+  .navBar a {
     font-size: 1.1rem;
     color: #5d4037;
     text-decoration: none;
     font-weight: 500;
     padding: 8px;
     position: relative;
-}
-
-.navBar a:hover {
+  }
+  
+  .navBar a:hover {
     color: #6a472b;
     /* Cor mais escura no hover */
-}
-
-/* Linha animada */
-.navBar a::after {
+  }
+  
+  /* Linha animada */
+  .navBar a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -66,65 +66,65 @@
     /* Cor da linha */
     transition: width 0.3s ease;
     /* Animação da largura */
-}
-
-.navBar a:hover::after {
+  }
+  
+  .navBar a:hover::after {
     width: 100%;
     /* Expande a linha para 100% no hover */
-}
-
-/* Botões de Cadastro e Login */
-.box_login_cadastro::after {
+  }
+  
+  /* Botões de Cadastro e Login */
+  .box_login_cadastro::after {
     display: flex;
     gap: 15px;
     align-items: center;
     /* Garante que a caixa de botões esteja visível */
     visibility: visible;
     opacity: 1;
-}
-
-.box_login_cadastro a {
+  }
+  
+  .box_login_cadastro a {
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 600;
     font-size: 0.9rem;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Estilo para o botão "Cadastrar" */
-.cadastrar {
+  }
+  
+  /* Estilo para o botão "Cadastrar" */
+  .cadastrar {
     border: 2px solid #8e5a4a;
     background-color: transparent;
     color: #8e5a4a !important;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cadastrar:hover {
+  }
+  
+  .cadastrar:hover {
     background-color: #8e5a4a;
     /* Muda o fundo para marrom no hover */
     color: #fff !important;
     /* Muda o texto para branco no hover */
-}
-
-
-/* Estilo para o botão "Logar" */
-.logar {
+  }
+  
+  
+  /* Estilo para o botão "Logar" */
+  .logar {
     border: 2px solid #8e5a4a;
     background-color: transparent;
     color: #8e5a4a !important;
     /* Texto branco inicialmente */
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.logar:hover {
+  }
+  
+  .logar:hover {
     background-color: #8e5a4a;
     /* Fundo marrom no hover */
     color: #fff !important;
     /* Texto permanece branco */
     opacity: 0.9;
     /* Opacidade reduzida para um efeito suave */
-}
-
+  }
+  
 /* sobre */
 
 .container_sobre {

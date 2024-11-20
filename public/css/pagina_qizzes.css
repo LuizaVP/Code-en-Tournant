@@ -1,8 +1,9 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Barlow', sans-serif;
-  background: #f7e9df;
+* {
+  
+  
+  
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .navBar {
@@ -71,6 +72,7 @@ body {
   /* Expande a linha para 100% no hover */
 }
 
+/* Botões de Cadastro e Login */
 .box_login_cadastro::after {
   display: flex;
   gap: 15px;
