@@ -1,22 +1,24 @@
-var medidaModel = require("../models/medidaModel");
+var historicoModel = require("../models/historicoModel");
 
-function buscarUltimasMedidas(req, res) {
+function finalizarQuiz(req, res) {
 
-    const limite_linhas = 7;
+   const idQuiz = req.params.idQuiz;
+   const idUsuario = req.params.idUsuario;
+   const qtdPerguntas  = req.body.QtdPerguntas;
+   const qtdAcertos = req.body.Acertos;
 
-    var idAquario = req.params.idAquario;
+   console.log(qtdPerguntas);
 
-    console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
 
-    medidaModel.buscarUltimasMedidas(idAquario, limite_linhas).then(function (resultado) {
+    historicoModel.finalizarQuiz(idQuiz, idUsuario, qtdPerguntas, qtdAcertos).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
-            res.status(204).send("Nenhum resultado encontrado!")
+            res.status(204).send("Houve um erro ao finalizar o quiz")
         }
     }).catch(function (erro) {
         console.log(erro);
-        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        console.log("Houve um erro ao finalizar o quiz.", erro.sqlMessage);
         res.status(500).json(erro.sqlMessage);
     });
 }
@@ -42,7 +44,7 @@ function buscarMedidasEmTempoReal(req, res) {
 }
 
 module.exports = {
-    buscarUltimasMedidas,
+    finalizarQuiz,
     buscarMedidasEmTempoReal
 
 }

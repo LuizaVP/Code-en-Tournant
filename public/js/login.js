@@ -35,7 +35,7 @@ function entrar() {
                 sessionStorage.ID_USUARIO = json.id;
 
                 setTimeout(function () {
-                    window.location = "./dashboard/cards.html"; //COLOCAR O CAMINHO DA DASH
+                    window.location = "/paginaQuizzes.html"; //COLOCAR O CAMINHO DA DASH
                 }, 1000); // apenas para exibir o loading
 
             });

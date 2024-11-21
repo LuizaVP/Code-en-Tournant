@@ -225,6 +225,7 @@ function desmarcarRadioButtons() {
 }
 
 function finalizarJogo() {
+    
     document.getElementById('pontuacao').style.display = "flex"
     let textoParaMensagemFinal = null
     let classComCoresParaMensagemFinal = null
@@ -242,7 +243,20 @@ function finalizarJogo() {
         textoParaMensagemFinal = "Uau, parabéns!"
         classComCoresParaMensagemFinal = "text-success-with-bg"
     }
-
+    fetch(`/historicos/finalizarQuiz/${1}/${1}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json" // Especifica que o corpo da requisição é JSON
+        },
+        body: JSON.stringify({
+            QtdPerguntas: 9,
+            Acertos: certas
+        })
+    }).then((resposta) => {
+        if(resposta.ok){
+            console.log("deu certo");
+        }
+    })
     textoParaMensagemFinal += "<br> Você acertou " + Math.round((porcentagemFinalDeAcertos)*100) + "% das questões."
 
 

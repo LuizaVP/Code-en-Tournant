@@ -1,5 +1,7 @@
+drop database codeeentournament;
 Create database codeentournant;
 use codeentournant;
+
 
 Create table usuario(
 idUsuario int primary key auto_increment,
@@ -8,25 +10,26 @@ Email varchar(100),
 Senha varchar(100)
 );
 
-create table historico_quiz(
-dtJogada DATETIME,
+create table historico(
+id_historico int auto_increment primary key,
+QtdPerguntas int,
 QtdAcertos int,
 Fkusuario int,
+fkQuiz int,
+constraint FkQuiz FOREIGN KEY (fkQuiz)
+references quiz (idQuiz),
 constraint Fkusuario FOREIGN KEY (fkUsuario)
-references usuario (idUsuario));
+references usuario (idUsuario)
+);
+
+create table quiz (
+idQuiz int auto_increment primary key,
+nome varchar(45)
+);
 
 
--- total de quizzes realizados pelos usuários
-SELECT usuario.Nome, COUNT(quiz.Fkusuario) AS TotalQuizzes
-FROM usuario
-LEFT JOIN quiz ON usuario.idUsuario = quiz.Fkusuario
-GROUP BY usuario.Nome;
-
--- selecionar os usuários que ainda nao realizaram nenhum quiz
-SELECT usuario.Nome
-FROM usuario
-LEFT JOIN quiz ON usuario.idUsuario = quiz.Fkusuario
-WHERE quiz.Fkusuario IS NULL;
-
+insert into quiz values
+(default, 'QuizHistória'),
+(default, 'QuizArtigos');
 
 
