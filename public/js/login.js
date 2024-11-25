@@ -30,12 +30,12 @@ function entrar() {
             resposta.json().then(json => {
                 console.log(json);
                 console.log(JSON.stringify(json));
-                sessionStorage.EMAIL_USUARIO = json.email;
-                sessionStorage.NOME_USUARIO = json.nome;
-                sessionStorage.ID_USUARIO = json.id;
+                sessionStorage.EMAIL_USUARIO = json[0].Email;
+                sessionStorage.NOME_USUARIO = json[0].Nome;
+                sessionStorage.ID_USUARIO = json[0].idUsuario;
 
-                setTimeout(function () {
-                    window.location = "/paginaQuizzes.html"; //COLOCAR O CAMINHO DA DASH
+                 setTimeout(function () {
+                    window.location = "/pagina_quizzes.html"; //COLOCAR O CAMINHO DA DASH
                 }, 1000); // apenas para exibir o loading
 
             });
@@ -46,7 +46,7 @@ function entrar() {
 
             resposta.json().then(function (mensagem){
                 console.error(mensagem);
-                div_erros_login.innerHTML =  JSON.parse(mensagem);
+                div_erros_login.innerHTML =  mensagem;
             });
         }
 

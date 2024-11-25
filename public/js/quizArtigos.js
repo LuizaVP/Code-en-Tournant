@@ -246,6 +246,22 @@
             textoParaMensagemFinal = "Uau, parabéns!"
             classComCoresParaMensagemFinal = "text-success-with-bg"
         }
+        var idUsuario = JSON.parse(sessionStorage.ID_USUARIO);
+        
+        fetch(`/historicos/finalizarQuiz/${2}/${idUsuario}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json" // Especifica que o corpo da requisição é JSON
+            },
+            body: JSON.stringify({
+                QtdPerguntas: 9,
+                Acertos: certas
+            })
+        }).then((resposta) => {
+            if(resposta.ok){
+                console.log("deu certo");
+            }
+        })
 
         textoParaMensagemFinal += "<br> Você acertou " + Math.round((porcentagemFinalDeAcertos)*100) + "% das questões."
         

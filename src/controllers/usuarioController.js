@@ -19,7 +19,7 @@ function autenticar(req, res) {
                     if (resultadoAutenticar.length == 1) {
                         console.log(resultadoAutenticar);
 
-                        res.status(200).json({mensagem: "Seu login foi execuado com sucesso!"})
+                        res.status(200).json(resultadoAutenticar)
                     } else if (resultadoAutenticar.length == 0) {
                         res.status(403).json({mensagem: "Email e/ou senha inválido(s)"});
                     } else {

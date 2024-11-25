@@ -243,7 +243,9 @@ function finalizarJogo() {
         textoParaMensagemFinal = "Uau, parabéns!"
         classComCoresParaMensagemFinal = "text-success-with-bg"
     }
-    fetch(`/historicos/finalizarQuiz/${1}/${1}`, {
+    var idUsuario = JSON.parse(sessionStorage.ID_USUARIO);
+        
+    fetch(`/historicos/finalizarQuiz/${1}/${idUsuario}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json" // Especifica que o corpo da requisição é JSON
@@ -257,6 +259,7 @@ function finalizarJogo() {
             console.log("deu certo");
         }
     })
+
     textoParaMensagemFinal += "<br> Você acertou " + Math.round((porcentagemFinalDeAcertos)*100) + "% das questões."
 
 
