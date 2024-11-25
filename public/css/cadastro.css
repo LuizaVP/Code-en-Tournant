@@ -241,7 +241,7 @@ body {
 
 .card {
     width: 40%;
-    height: 80%;
+    height: fit-content;
     /* Reduzindo um pouco a largura */
     background-color: #f0e6e0;
     /* Tom um pouco mais escuro */
