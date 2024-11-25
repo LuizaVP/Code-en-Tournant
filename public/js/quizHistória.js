@@ -274,6 +274,9 @@ function finalizarJogo() {
     // btnConcluir.disabled = true
     btnTentarNovamente.disabled = false
     
+    setTimeout(function () {
+        window.location = "/home.html"; //COLOCAR O CAMINHO DA DASH
+    }, 3000); // apenas para exibir o loading
 
 
 }

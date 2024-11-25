@@ -247,7 +247,7 @@
             classComCoresParaMensagemFinal = "text-success-with-bg"
         }
         var idUsuario = JSON.parse(sessionStorage.ID_USUARIO);
-        
+
         fetch(`/historicos/finalizarQuiz/${2}/${idUsuario}`, {
             method: "POST",
             headers: {
@@ -262,7 +262,7 @@
                 console.log("deu certo");
             }
         })
-
+       
         textoParaMensagemFinal += "<br> Você acertou " + Math.round((porcentagemFinalDeAcertos)*100) + "% das questões."
         
 
@@ -276,6 +276,11 @@
         btnSubmeter.disabled = true
         // btnConcluir.disabled = true
         btnTentarNovamente.disabled = false
+
+        setTimeout(function () {
+            window.location = "/home.html"; //COLOCAR O CAMINHO DA DASH
+        }, 3000); // apenas para exibir o loading
+
         
 
 
