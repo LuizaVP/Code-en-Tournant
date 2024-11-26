@@ -271,6 +271,39 @@ body {
     font-weight: 700;
     /* Texto mais robusto */
 }
+.card_senha {
+    margin: 20px auto; /* Centralizado com margens */
+    font-family: 'Poppins'; /* Fonte padrão e limpa */
+    position: absolute;
+    right: 20px; /* Distância da lateral direita */
+    top: 210px; /* Alinha verticalmente abaixo do formulário */
+    padding: 10px;
+    color: #7a5e4d;
+    width: 300px; /* Define uma largura fixa */
+    height: 255px;
+    background-color: #f0e6e0;
+    border: 3px solid #c4a08d;
+    border-radius: 20px;
+    color: #7a5e4d;
+  }
+    
+ 
+  
+  
+  .card_senha h2 {
+    font-size: 20px; /* Tamanho do título */
+    color: #6b4226; /* Cor do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centralizar título */
+  }
+  
+  .card_senha p {
+    line-height: 1.6; /* Espaçamento entre linhas do texto */
+    font-size: 16px; /* Tamanho do texto */
+    margin: 0; /* Remover margens padrão */
+    text-align: left; /* Alinhar texto à esquerda */
+  }
+  
 
 .formulario {
     display: flex;
@@ -310,7 +343,9 @@ body {
     transform: translateY(-3px);
 }
 
-
+#senha {
+    
+}
 
 .loading-div {
     width: 50px;
