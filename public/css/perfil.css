@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/aesthetic-ballerina-1-1024x576.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Flexbox para centralizar o conteúdo dentro do body */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+
+
+/* Navbar */
+#navbar {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 145px; 
+    background-color: #f7e9df; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    padding-top: 30px; 
+}
+
+/* Links da navbar */
+#navbar a {
+    justify-content: center;
+    margin-bottom: 30px; 
+    text-decoration: none; 
+    display: flex; 
+    justify-content: center; 
+}
+
+/* Estilo dos ícones SVG */
+#navbar svg {
+    justify-content: center;
+    display: flex;
+    width: 70px; 
+    height: 70px; 
+    transition: transform 0.2s, filter 0.2s; 
+    background-image: none;
+}
+
+/* Efeito ao passar o mouse sobre os ícones */
+#navbar a:hover svg {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+/* Título */
+#navbar h2 {
+    padding-left: 12%;
+    display: flex;
+    justify-content: center;
+    color: rgb(116, 51, 27);
+    background-image: none;
+}
+#title {
+    margin-top: 70px; /* Deixa espaço para o navbar */
+    text-align: center;
+    color: rgb(116, 51, 27);
+}
+
+.container1 {
+    margin-top: 40px;
+    background: rgb(116, 51, 27);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right:45% ;
+}
+
+/* Aumenta o tamanho dos textos do título */
+.container1 h2 {
+    font-size: 20px;
+}
+
+.container2 {
+    margin-bottom:45px;
+    background: rgb(116, 51, 27);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 45%;
+}
+.container2 h2 {
+    font-size: 20px;
+}
+
