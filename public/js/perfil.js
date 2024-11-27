@@ -2,7 +2,7 @@ function buscarDadosUsuario(){
   var acertosHistoria  = [0];
   var acertosArtigos = [0];
 
-  title.innerHTML += sessionStorage.NOME_USUARIO;
+  nome.innerHTML = sessionStorage.NOME_USUARIO;
 
 fetch(`/usuarios/buscarDados/${sessionStorage.ID_USUARIO}`, {
   method: "GET",
@@ -34,6 +34,7 @@ fetch(`/usuarios/buscarDados/${sessionStorage.ID_USUARIO}`, {
         console.log(acertosHistoria, acertosArtigos)
 
         const ctx = document.getElementById('myChart');
+        Chart.defaults.backgroundColor = '#ffbecb';
 
         new Chart(ctx, {
           type: 'pie',
@@ -57,6 +58,7 @@ fetch(`/usuarios/buscarDados/${sessionStorage.ID_USUARIO}`, {
       })
     }
   })
+  
   .catch(function (resposta) {
     console.log(`#ERRO: ${resposta}`);
   });

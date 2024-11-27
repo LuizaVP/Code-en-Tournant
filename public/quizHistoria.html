@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo - Quiz</title>
     <link rel="stylesheet" href="./css/quizHist.css">
+    <script src="./js/sessao.js"></script>
 </head>
 
 
-<body onload="onloadEsconder()">
+<body onload="onloadEsconder(); validarSessao()">
     <div id="pontuacaoEJogo">
         <button id="btnIniciarQuiz" onclick="iniciarQuiz()">INICIAR QUIZ</button>
 

@@ -16,9 +16,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="./js/sessao.js"></script>
     <title>Code en Tournant</title>
 </head>
-<body>
+<body onload="validarSessao()">
     <header>
         <div class="cabecalho">
             
@@ -28,7 +29,7 @@
                     <img src="./assets/Logo.png" alt="Logo">
                     
                     <!-- Menu de navegação -->
-                    <div class="menu">
+                    <div id="menu" class="menu">
                         <a href="./home.html">HOME</a>
                         <a href="./sobre.html">HISTÓRIA</a>
                         <a href="./companhias.html">COMPANHIAS</a>
@@ -36,7 +37,7 @@
                     </div>
             
                     <!-- Botões de Cadastro e Login -->
-                    <div class="box_login_cadastro">
+                    <div id="boxLogin" class="box_login_cadastro">
                         <a class="cadastrar" href="cadastro.html">CADASTRE-SE</a>
                         <a class="logar" href="./login1.html">ENTRAR</a>
                     </div>

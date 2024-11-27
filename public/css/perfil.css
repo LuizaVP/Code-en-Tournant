@@ -84,6 +84,7 @@ body {
 /* Aumenta o tamanho dos textos do título */
 .pai .container1 h2 {
     font-size: 20px;
+    color: #f7e9df;
 }
 .pai{
     display: flex;
@@ -101,6 +102,7 @@ body {
 }
 .pai .container2 h2 {
     font-size: 20px;
+    color: #f7e9df
 }
 .grafico {
     background-color: #f7e9df;
@@ -109,4 +111,8 @@ body {
     display: flex;
     justify-content: center;
     margin: 96px;
+}
+#kpi1, #kpi2{
+    color: #f7e9df;
+    font-size: px;
 }

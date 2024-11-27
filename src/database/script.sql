@@ -1,4 +1,4 @@
-drop database codeeentournament;
+
 Create database codeentournant;
 use codeentournant;
 
