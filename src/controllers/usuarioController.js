@@ -5,9 +5,9 @@ function autenticar(req, res) {
     var senha = req.body.senhaServer;
 
     if (email == undefined) {
-        res.status(400).json({mensagem: "Seu email da requisição está undefined!"});
+        res.status(400).json({ mensagem: "Seu email da requisição está undefined!" });
     } else if (senha == undefined) {
-        res.status(400).json({mensagem: "Sua senha da requisição está indefinida!"});
+        res.status(400).json({ mensagem: "Sua senha da requisição está indefinida!" });
     } else {
 
         usuarioModel.autenticar(email, senha)
@@ -21,9 +21,9 @@ function autenticar(req, res) {
 
                         res.status(200).json(resultadoAutenticar)
                     } else if (resultadoAutenticar.length == 0) {
-                        res.status(403).json({mensagem: "Email e/ou senha inválido(s)"});
+                        res.status(403).json({ mensagem: "Email e/ou senha inválido(s)" });
                     } else {
-                        res.status(401).json({mensagem: "Mais de um usuário com o mesmo email e senha!"});
+                        res.status(401).json({ mensagem: "Mais de um usuário com o mesmo email e senha!" });
                     }
                 }
             ).catch(
@@ -45,12 +45,12 @@ function cadastrar(req, res) {
 
     // Faça as validações dos valores
     if (nome == undefined) {
-        res.status(400).json({mensagem: 'O nome da requisição está undefined!'})
+        res.status(400).json({ mensagem: 'O nome da requisição está undefined!' })
     } else if (email == undefined) {
-        res.status(400).json({mensagem: 'O email da requisição está undefined!'});
+        res.status(400).json({ mensagem: 'O email da requisição está undefined!' });
     } else if (senha == undefined) {
-        res.status(400).json({mensagem: 'A senha da requisição está undefined!'});
-    } else{
+        res.status(400).json({ mensagem: 'A senha da requisição está undefined!' });
+    } else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
         usuarioModel.cadastrar(nome, email, senha)
@@ -71,7 +71,25 @@ function cadastrar(req, res) {
     }
 }
 
+function buscarDados(req, res) {
+    var idUsuario = req.params.idUsuario
+    
+    usuarioModel.buscarKPI(idUsuario).then(function (resultado) {
+        return res.status(200).json(resultado)
+    })
+    .catch(function (erro) {
+        console.log(erro);
+        console.log(erro.sqlMessage)
+        return res.status(500).json(erro.sqlMessage);
+    })
+    
+}
+
+
+
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    buscarDados
 }

@@ -22,7 +22,35 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucaoSql);
 }
 
+
+function buscarKPI(idUsuario){
+    var instrucaoSql = `SELECT
+
+                        (SELECT SUM(historico.QtdAcertos)
+                        FROM historico WHERE Fkusuario = ${idUsuario})AS Acertos,
+                        
+                        (SELECT COUNT(historico.id_historico) FROM historico
+                        WHERE Fkusuario = ${idUsuario}) AS Jogadas, 
+                        
+                        (SELECT SUM(historico.QtdAcertos)
+                        FROM historico WHERE Fkusuario = ${idUsuario}
+                        AND historico.fkQuiz = 1) AS acertosHistoria,
+
+                        (SELECT SUM(historico.QtdAcertos)
+                        FROM historico WHERE Fkusuario = ${idUsuario}
+                        AND historico.fkQuiz = 2) AS acertosArtigos
+
+                        FROM historico WHERE FkUsuario = ${idUsuario};
+
+                       `
+
+    return database.executar(instrucaoSql);
+
+
+}
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    buscarKPI
 };

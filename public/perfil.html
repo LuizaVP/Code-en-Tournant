@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/perfil.css">
 </head>
-<body>
+<body onload="buscarDadosUsuario()">
     <div id="navbar">
         <h2>Code en Tournant</h2>
     <a href="home.html">
@@ -23,21 +23,36 @@
     </div>
 
     <div id="title" class="titulo">
-        <h2>Olá, fulano de tal!</h2>
+        <h2>Olá, </h2>
     </div>
+
+
+    <div id="kpicontainer" class="pai">
 
     <div id="kpi1" class="container1">
         <h2>Quantidade de acertos:
             <br>
-            pegar la do banco
+            
         </h2>
     </div>
 
         <div id="kpi2" class="container2">
             <h2>Vezes jogadas:
                 <br>
-                pegar la do banco
+                
             </h2>
     </div>
+  </div>
+      
+      
+             
 </body>
 </html>
+<div id="grafico1" class="grafico">
+    <canvas id="myChart"></canvas>
+  </div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="./js/perfil.js"></script>

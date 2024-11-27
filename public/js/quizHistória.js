@@ -260,6 +260,9 @@ function finalizarJogo() {
         }
     })
 
+
+    
+
     textoParaMensagemFinal += "<br> Você acertou " + Math.round((porcentagemFinalDeAcertos)*100) + "% das questões."
 
 
