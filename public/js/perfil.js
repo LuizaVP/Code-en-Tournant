@@ -34,7 +34,6 @@ fetch(`/usuarios/buscarDados/${sessionStorage.ID_USUARIO}`, {
         console.log(acertosHistoria, acertosArtigos)
 
         const ctx = document.getElementById('myChart');
-        Chart.defaults.backgroundColor = '#ffbecb';
 
         new Chart(ctx, {
           type: 'pie',
@@ -43,7 +42,8 @@ fetch(`/usuarios/buscarDados/${sessionStorage.ID_USUARIO}`, {
             datasets: [{
               label: 'Quantidade de acertos no total',
               data: [acertosHistoria[0],acertosArtigos[0]],
-              borderWidth: 2
+              borderWidth: 2,
+              backgroundColor: ['#f3cbcb', '#74331b' ]
             }]
           },
           options: {

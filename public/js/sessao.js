@@ -5,7 +5,7 @@ function validarSessao(){
         menu.innerHTML += `<a href='/perfil.html'>PERFIL</a>`;
         boxLogin.innerHTML = "";
     }else{
-        location.replace("/login.html")
+        location.replace("/login1.html")
     }
 
 }

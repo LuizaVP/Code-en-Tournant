@@ -63,7 +63,7 @@ body {
     padding-left: 12%;
     display: flex;
     justify-content: center;
-    color: rgb(116, 51, 27);
+    color: #74331b;
     background-image: none;
 }
 #title {
@@ -84,7 +84,7 @@ body {
 /* Aumenta o tamanho dos textos do título */
 .pai .container1 h2 {
     font-size: 20px;
-    color: #f7e9df;
+    color: #f3cbcb;
 }
 .pai{
     display: flex;
@@ -114,5 +114,5 @@ body {
 }
 #kpi1, #kpi2{
     color: #f7e9df;
-    font-size: px;
+    font-size: 44px;
 }

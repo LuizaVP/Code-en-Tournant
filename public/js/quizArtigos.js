@@ -278,7 +278,7 @@
         btnTentarNovamente.disabled = false
 
         setTimeout(function () {
-            window.location = "/home.html"; //COLOCAR O CAMINHO DA DASH
+            window.location = "/perfil.html"; //COLOCAR O CAMINHO DA DASH
         }, 3000); // apenas para exibir o loading
 
         
