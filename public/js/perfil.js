@@ -65,3 +65,18 @@ fetch(`/usuarios/buscarDados/${sessionStorage.ID_USUARIO}`, {
 
 
 }
+function logout(){
+  var idUsuario = sessionStorage.ID_USUARIO;
+
+    sessionStorage.clear();
+    
+    menu.innerHTML = ` 
+      <a href="./home.html">HOME</a>
+      <a href="./sobre.html">HISTÓRIA</a>
+      <a href="./companhias.html">COMPANHIAS</a>
+      <a href="./pagina_quizzes.html">QUIZZES</a>
+      <a class="cadastrar" href="cadastro.html">CADASTRE-SE</a>
+      <a class="logar" href="./login1.html">ENTRAR</a>`;
+    
+  }
+  
